@@ -1,40 +1,22 @@
-import './App.css'
-import profileImg from './assets/profile.jpg'; 
+import AboutMe from "./modules/About/About";
+import "./App.css";
+import Posts from "./modules/Posts/Posts";
+import Header from "./common/layouts/Header/Header";
 
 function App() {
-
   return (
     <>
-    <main>
-      <div className="container">
-        <div className='card card--primary block-row'>
-          <div>
-            <picture className="profile--image"> 
-              <source
-                srcSet={profileImg}
-                media="(orientation: portrait)" />
-              <img src={profileImg} alt="" />
-            </picture>
-          </div>
-          <div className='block'>
-            <h1>Software developer</h1>
-            <p>
-              Hi! I'm Angela, a frontend web engineer based in Copenhagen, with a strong focus on frontend.
-            </p>
-            <p>
-              I enjoy building web applications, designing architecture,
-              and coaching developers to write better solutions.
-            </p>
-
-            <p>
-              My expertise is Typescript, Javascript, Vue, React, Next.js.
-            </p>
-          </div>
+      <Header />
+      <main className='mx-auto max-w-4xl px-4 py-6'>
+        <div className='mx-auto max-w-4xl'>
+          <section className='mb-10'>
+            <AboutMe />
+          </section>
+          <Posts />
         </div>
-      </div>
-    </main>
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,12 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import "tailwindcss";
 
 :root {
   --tea-green: #EBFFED;
-  --light-cyan: #c9e4e7ff;
-  --wisteria: #b4a0e5ff;
-  --imperial-red: #f94447ff;
-  --grey: #f7f7f8;
+  --primary-text: #032E63;
+  --secondary: #60a5fa;
+  --secondary-hover: #3B82F6;
+  --card-secondary: #F7F8F8;
   --grey-border: #e5e5e5;
+  --muted-foreground: #6b7280;
+  --muted: #e5e5e6;
+}
+
+@theme {
+  --color-tea-green: var(--tea-green);
+  --color-primary-text: var(--primary-text);
+  --color-secondary: var(--secondary);
+  --color-grey-border: var(--grey-border);
+  --color-secondary-hover: var(--secondary-hover);
+  --font-family: "Quicksand", sans-serif;
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-card-secondary: var(--card-secondary);
 }
 
 html {
@@ -17,50 +32,17 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
+  font-size: 14px;
   background-color: var(--grey)
   /* min-height: 80rem; */
 }
 main {
   padding: 2rem 1rem;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  height: 100vh;
 }
 
-.container {
-  margin-inline: auto;
-  max-width: 56rem;
+.logo__icon:hover {
+ fill: var(--secondary-hover);
 }
-
-.block-row {
-  display: flex;
-  flex-direction: row;
-  gap: 2.5rem;
-}
-
-.profile--image img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  border: 2px solid var(--wisteria);
-  object-fit: cover;
-}
-
-h1 {
-  margin: 0;
-}
-
-.card {
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 2rem 1.5rem;
-  border: var(--grey-border)
-}
-
-.card--primary {
-  background-color: var(--tea-green);
-  font-weight: 600;
+.logo__icon {
+ fill: var(--primary-text);
 }
