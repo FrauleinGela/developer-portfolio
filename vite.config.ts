@@ -12,6 +12,6 @@ export default defineConfig({
       svgrOptions: {
         icon: true,
       },
-    })
+    }),
   ],
 })
