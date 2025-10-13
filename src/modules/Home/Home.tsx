@@ -1,34 +1,36 @@
 import Button from "../../common/components/Button/Button";
 import profileImg from "../../assets/profile.jpg";
+import Posts from "../Posts/Posts";
 
 function Home() {
   return (
     <>
-      <div className='py-8 px-6 rounded-lg shadow-sm border border-grey-border flex-col bg-tea-green/50 text-primary-text font-semibold'>
-        <div className='flex flex-row gap-8'>
-          <picture>
+    <section className="md:text-xl py-8 px-6 rounded-lg shadow-sm border border-grey-border bg-tea-green/50 ">
+      <div className='text-primary-text font-semibold'>
+        <div className='flex md:flex-row flex-col gap-8'>
+          <picture className="m-auto md:m-0">
             <source srcSet={profileImg} media='(orientation: portrait)' />
             <div className='ring-2 ring-secondary-hover/50 rounded-full'>
-              <img className='w-35 h-30 rounded-full' src={profileImg} alt='' />
+              <img className='md:w-35 md:h-30 w-40 h-40 rounded-full' src={profileImg} alt='' />
             </div>
           </picture>
-          <div>
+          <div className="text-2xl text-center md:text-left md:text-base ">
             <div>
               <h1 className='text-3xl'>Software developer</h1>
-              <p className='mt-4'>
+              <p className='mt-6 md:mt-4'>
                 Hi! I'm Angela, a frontend web engineer based in Copenhagen,
                 with a strong focus on frontend.
               </p>
-              <p className='mt-4'>
+              <p className='mt-6 md:mt-4'>
                 I enjoy building web applications, designing architecture, and
                 coaching developers to write better solutions.
               </p>
-              <p className='mt-4'>
-                Full-stack developer with expertise in UI, Typescript,
+              <p className='mt-6 md:mt-4'>
+                Software developer with expertise in UI, Typescript,
                 Javascript, Vue, React, Next.js
               </p>
             </div>
-            <div className='flex flex-row gap-4 mt-4'>
+            <div className='flex flex-row gap-4 md:mt-4 mt-8 justify-center md:justify-start'>
               <a
                 href='https://github.com/FrauleinGela'
                 target='_blank'
@@ -94,6 +96,10 @@ function Home() {
           </div>
         </div>
       </div>
+    </section>
+    <section className="mt-4 py-8">
+      <Posts />
+    </section>
     </>
   );
 }

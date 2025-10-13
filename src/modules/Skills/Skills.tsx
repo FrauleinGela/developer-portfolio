@@ -1,7 +1,6 @@
 function Skills() {
   return (
     <>
-      <p> skills to come... </p>
     </>
   );
 }

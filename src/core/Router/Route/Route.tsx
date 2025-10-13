@@ -11,6 +11,9 @@ function Route() {
             <Outlet />
           </div>
         </main>
+        <footer className="mx-auto py-6 max-w-4xl">
+          <p className="text-center text-sm">Designed & Developed by Angela Patino © 2025</p>
+        </footer>
       </>
     );
   };

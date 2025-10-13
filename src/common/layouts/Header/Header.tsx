@@ -2,7 +2,6 @@ import { NavLink } from "react-router";
 import Logo from "../../../assets/angela-logo.svg?react";
 import clsx from "clsx";
 import { useState } from "react";
-import Button from "../../components/Button/Button";
 import { Menu, X } from "lucide-react";
 
 function Header() {
@@ -18,7 +17,7 @@ function Header() {
   return (
     <header className='shadow-md font-semibold '>
       <nav className='hidden md:flex relative bg-tea-green text-primary-text shadow-b text-lg'>
-        <div className='max-w-4xl px-8 mx-auto'>
+        <div className='max-w-4xl mx-auto'>
           <div className='relative flex h-19 '>
             <ul className='flex gap-6'>
               <li className='m-auto'>
@@ -35,14 +34,14 @@ function Header() {
               </li>
               <li className='m-auto'>
                 <NavLink
-                  to='/skills'
+                  to='/experience'
                   className={({ isActive }: { isActive: boolean }) =>
                     isActive
                       ? clsx(commonLinkClasses, activeLinkClasses)
                       : clsx(commonLinkClasses, inactiveLinkClasses)
                   }
                 >
-                  Skills
+                  Experience
                 </NavLink>
               </li>
               <li className='m-auto'>
@@ -69,16 +68,16 @@ function Header() {
                   Posts
                 </NavLink>
               </li>
-              <li className='m-auto'>
+               <li className='m-auto'>
                 <NavLink
-                  to='/contact'
+                  to='/skills'
                   className={({ isActive }: { isActive: boolean }) =>
                     isActive
                       ? clsx(commonLinkClasses, activeLinkClasses)
                       : clsx(commonLinkClasses, inactiveLinkClasses)
                   }
                 >
-                  Contact
+                  Skills
                 </NavLink>
               </li>
             </ul>
@@ -151,7 +150,7 @@ function Header() {
           </li>
           <li className='w-full'>
             <NavLink
-              to='/skills'
+              to='/experience'
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? clsx(activeLinkClasses) : undefined
               }
@@ -159,9 +158,10 @@ function Header() {
                 setIsMobileMenuOpen(false);
               }}
             >
-              Experience & Skills
+              Experience
             </NavLink>
           </li>
+          
           <li className='w-full'>
             <NavLink
               to='/posts'
@@ -177,7 +177,7 @@ function Header() {
           </li>
           <li className='w-full'>
             <NavLink
-              to='/contact'
+              to='/skills'
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? clsx(activeLinkClasses) : undefined
               }
@@ -185,7 +185,7 @@ function Header() {
                 setIsMobileMenuOpen(false);
               }}
             >
-              Contact
+              Skills
             </NavLink>
           </li>
         </ul>

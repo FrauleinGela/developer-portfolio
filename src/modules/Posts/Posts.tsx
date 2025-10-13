@@ -20,7 +20,7 @@ function Posts() {
   ];
   return (
     <>
-      <section className='mt-4 text-primary-text'>
+      <section className='text-primary-text'>
         <div className='mb-6'>
           <h2 className='font-bold text-3xl'>Fun reads</h2>
         </div>

@@ -10,7 +10,7 @@ function Button({
   ...rest
 }: ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const baseClasses =
-    'inline-flex items-center gap-2 rounded-lg px-2 py-1 transition-all duration-300 ease-out focus:ring-2 focus:outline-none';
+    'inline-flex items-center gap-2 rounded-lg px-2 py-1 transition-all duration-300 ease-out focus:ring-2 focus:outline-none cursor-pointer';
   const variantClasses =
     variant === 'primary'
       ? 'bg-secondary-hover text-white hover:bg-secondary/20 '
