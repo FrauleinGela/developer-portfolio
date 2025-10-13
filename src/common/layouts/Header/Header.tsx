@@ -142,6 +142,9 @@ function Header() {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? clsx(activeLinkClasses) : undefined
               }
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
             >
               About
             </NavLink>
@@ -152,8 +155,11 @@ function Header() {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? clsx(activeLinkClasses) : undefined
               }
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
             >
-              Skills
+              Experience & Skills
             </NavLink>
           </li>
           <li className='w-full'>
@@ -162,6 +168,9 @@ function Header() {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? clsx(activeLinkClasses) : undefined
               }
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
             >
               Posts
             </NavLink>
@@ -172,6 +181,9 @@ function Header() {
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? clsx(activeLinkClasses) : undefined
               }
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
             >
               Contact
             </NavLink>
