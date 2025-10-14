@@ -14,7 +14,7 @@ function Route() {
         </main>
         <footer className="mx-auto py-6 max-w-4xl">
           <a
-            href="mailto:you@example.com"
+            href="mailto:angelapatyu@gmail.com"
             className="block mx-auto mb-2 w-fit"
           >
             <Button variant="primary">
