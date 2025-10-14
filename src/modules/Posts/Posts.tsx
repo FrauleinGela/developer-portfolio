@@ -5,17 +5,17 @@ function Posts() {
   const posts: PostInfo[] = [
     {
       id: 1,
-      title: "Project #1",
-      description: "Displays a list of items blah blah blah",
-      technologies: ["TypeScript", "React", "Vite", "TailwindCSS"],
-      link: "#",
+      title: "Eslint rules for dealing with Enums peculiarities",
+      description: "As of now Enum have their peculiarities in Typescript...",
+      technologies: ["TypeScript", "EsLint"],
+      link: "https://dev.to/angelapy/eslint-rules-for-dealing-with-enums-peculiarities-3p4h",
     },
     {
       id: 2,
-      title: "Project #2",
-      description: "Another project description goes here",
-      technologies: ["JavaScript", "Vue", "Webpack", "CSS"],
-      link: "#",
+      title: "Object literals with satisfies operator for UI field mapping",
+      description: "Our Frontend is responsible for converting fields into labels that make more sense to users...",
+      technologies: ["Typescript"],
+      link: "https://dev.to/angelapy/object-literals-with-satisfies-operator-for-ui-field-mapping-2ggp",
     },
   ];
   return (

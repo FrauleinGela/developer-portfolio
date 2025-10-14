@@ -6,7 +6,12 @@ function Post({ post }: PostProps) {
   return (
     <>
       <article className='group'>
-        <a className='cursor-pointer'>
+        <a
+          className='cursor-pointer'
+          href={post.link}
+          target='_blank'
+          rel='noreferrer'
+        >
           <div className='bg-card-secondary p-6 rounded-lg shadow-sm border border-grey-border hover:shadow-md hover:bg-tea-green/50 hover:border-tea-green transition-shadow duration-300'>
             <div className='mb-4'>
               <strong className='group-hover:text-secondary-hover text-xl'>
