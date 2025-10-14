@@ -117,7 +117,7 @@ function Header() {
       </div>
       <nav
         className={clsx(
-          "fixed z-40 w-screen h-screen flex flex-col bg-tea-green/80 backdrop-blur-sm",
+          "md:hidden fixed z-40 w-screen h-screen flex flex-col bg-tea-green/80 backdrop-blur-sm",
           isMobileMenuOpen ? "block" : "hidden"
         )}
       >

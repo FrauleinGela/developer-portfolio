@@ -11,7 +11,7 @@ function Home() {
           <picture className="m-auto md:m-0">
             <source srcSet={profileImg} media='(orientation: portrait)' />
             <div className='ring-2 ring-secondary-hover/50 rounded-full'>
-              <img className='md:w-35 md:h-34 w-34 h-34 rounded-full' src={profileImg} alt='' />
+              <img className='md:w-40 md:h-34 w-34 h-34 rounded-full' src={profileImg} alt='' />
             </div>
           </picture>
           <div className="text-2xl text-center md:text-left md:text-base ">
