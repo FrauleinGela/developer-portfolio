@@ -11,7 +11,7 @@ function Home() {
           <picture className="m-auto md:m-0">
             <source srcSet={profileImg} media='(orientation: portrait)' />
             <div className='ring-2 ring-secondary-hover/50 rounded-full'>
-              <img className='md:w-40 md:h-34 w-34 h-34 rounded-full' src={profileImg} alt='' />
+              <img className='md:w-42 md:h-34 w-28 h-28 rounded-full' src={profileImg} alt='' />
             </div>
           </picture>
           <div className="text-2xl text-center md:text-left md:text-base ">
@@ -27,7 +27,7 @@ function Home() {
               </p>
               <p className='mt-6 md:mt-4'>
                 Software developer with expertise in UI, Typescript,
-                Javascript, Vue, React, Next.js
+                Javascript, Vue, React, Angular, Next.js
               </p>
             </div>
             <div className='flex flex-row gap-4 md:mt-4 mt-8 justify-center md:justify-start'>
