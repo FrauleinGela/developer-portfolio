@@ -34,14 +34,14 @@ function Header() {
               </li>
               <li className='m-auto'>
                 <NavLink
-                  to='/experience'
+                  to='/posts'
                   className={({ isActive }: { isActive: boolean }) =>
                     isActive
                       ? clsx(commonLinkClasses, activeLinkClasses)
                       : clsx(commonLinkClasses, inactiveLinkClasses)
                   }
                 >
-                  Experience
+                  Posts
                 </NavLink>
               </li>
               <li className='m-auto'>
@@ -58,14 +58,14 @@ function Header() {
               </li>
               <li className='m-auto'>
                 <NavLink
-                  to='/posts'
+                  to='/experience'
                   className={({ isActive }: { isActive: boolean }) =>
                     isActive
                       ? clsx(commonLinkClasses, activeLinkClasses)
                       : clsx(commonLinkClasses, inactiveLinkClasses)
                   }
                 >
-                  Posts
+                  Experience
                 </NavLink>
               </li>
                <li className='m-auto'>
@@ -150,20 +150,6 @@ function Header() {
           </li>
           <li className='w-full'>
             <NavLink
-              to='/experience'
-              className={({ isActive }: { isActive: boolean }) =>
-                isActive ? clsx(activeLinkClasses) : undefined
-              }
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-              }}
-            >
-              Experience
-            </NavLink>
-          </li>
-          
-          <li className='w-full'>
-            <NavLink
               to='/posts'
               className={({ isActive }: { isActive: boolean }) =>
                 isActive ? clsx(activeLinkClasses) : undefined
@@ -173,6 +159,19 @@ function Header() {
               }}
             >
               Posts
+            </NavLink>
+          </li>
+          <li className='w-full'>
+            <NavLink
+              to='/experience'
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive ? clsx(activeLinkClasses) : undefined
+              }
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              Experience
             </NavLink>
           </li>
           <li className='w-full'>
