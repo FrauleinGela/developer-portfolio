@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import Header from "../../../common/layouts/Header/Header";
+import Button from "../../../common/components/Button/Button";
 
 function Route() {
   return (
@@ -12,6 +13,14 @@ function Route() {
           </div>
         </main>
         <footer className="mx-auto py-6 max-w-4xl">
+          <a
+            href="mailto:you@example.com"
+            className="block mx-auto mb-2 w-fit"
+          >
+            <Button variant="primary">
+              Contact Me
+            </Button>
+          </a>
           <p className="text-center text-sm">Designed & Developed by Angela Patino © 2025</p>
         </footer>
       </>

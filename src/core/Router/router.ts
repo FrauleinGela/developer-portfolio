@@ -31,6 +31,10 @@ const router = createBrowserRouter([
         path: "posts",
         Component: Posts,
       },
+      {
+        path: "*",
+        Component: Home, // fallback to Home for unmatched routes
+      },
     ],
   },
 ]);
