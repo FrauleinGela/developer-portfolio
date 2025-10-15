@@ -18,8 +18,7 @@ function Home() {
             <div>
               <h1 className='text-3xl'>Software developer</h1>
               <p className='mt-6 md:mt-4'>
-                Hi! I'm Angela, a frontend web engineer based in Copenhagen,
-                with a strong focus on frontend.
+                Hi! I'm Angela, a software engineer based in Copenhagen, with a strong focus on frontend development.
               </p>
               <p className='mt-6 md:mt-4'>
                 I enjoy building web applications, designing architecture, and
