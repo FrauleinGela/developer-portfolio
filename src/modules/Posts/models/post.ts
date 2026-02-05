@@ -4,4 +4,5 @@ export interface PostInfo {
   description: string;
   technologies: string[];
   link: string;
+  publishedAt: string;
 }
