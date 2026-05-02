@@ -19,13 +19,17 @@ function Post({ post }: PostProps) {
               </strong>
             </div>
             <p className='leading-relaxed mb-4'>{post.description}</p>
-            <p className='text-sm text-gray-500 mb-4'>
-              {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </p>
+            <div className='flex items-center gap-2 text-sm text-gray-500 mb-4'>
+              <span>
+                {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}
+              </span>
+              <span aria-hidden='true'>·</span>
+              <span>{post.readingTimeMinutes} min read</span>
+            </div>
             <ul className='flex flex-wrap items-center gap-1.5 mb-4'>
               {post.technologies.map((tech) => (
                 <li

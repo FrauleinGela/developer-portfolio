@@ -14,6 +14,7 @@ export const useFetchArticles = () => {
     technologies: article.tag_list,
     link: article.url,
     publishedAt: article.published_at,
+    readingTimeMinutes: article.reading_time_minutes,
   });
 
   const query = useQuery({
