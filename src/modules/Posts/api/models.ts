@@ -5,4 +5,5 @@ export interface ApiDevtoArticle {
   tag_list: string[];
   url: string;
   published_at: string;
+  reading_time_minutes: number;
 }

@@ -5,4 +5,5 @@ export interface PostInfo {
   technologies: string[];
   link: string;
   publishedAt: string;
+  readingTimeMinutes: number;
 }
